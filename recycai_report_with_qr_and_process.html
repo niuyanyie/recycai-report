@@ -1,0 +1,193 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>RecycAI - Sample Traceability Report (with QR & Processes)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 24px;
+      background: linear-gradient(135deg, #eafaf1 0%, #f4fff8 100%);
+      color: #053b1f;
+    }
+    .header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .summary {
+      flex: 1 1 260px;
+      background: #f6fff8;
+      border-left: 6px solid #43a047;
+      padding: 16px;
+      border-radius: 10px;
+    }
+    .qr-box {
+      flex: 0 0 200px;
+      text-align: center;
+      background: #f6fff8;
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px dashed #81c784;
+    }
+    .qr-box img {
+      max-width: 160px;
+      height: auto;
+      margin-bottom: 6px;
+    }
+    .card {
+      border: 1px solid #c8e6c9;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      background: #ffffffb0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .images {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .img-box {
+      text-align: center;
+      max-width: 260px;
+    }
+    .img-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #a5d6a7;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .img-box p {
+      margin-top: 6px;
+      font-size: 0.9em;
+      color: #1b5e20;
+    }
+    h2 {
+      color: #1b5e20;
+      margin-top: 24px;
+    }
+    .process-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .process-card {
+      flex: 1 1 260px;
+      background: #ffffffb0;
+      border-radius: 10px;
+      padding: 12px;
+      border: 1px solid #c8e6c9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .process-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #a5d6a7;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 6px;
+    }
+    p.footer {
+      font-size: 0.85em;
+      color: #33691e;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>♻️ RecycAI — Sample Traceability Report</h1>
+    <p>From tagged items to recycling plants and recycled products.</p>
+  </div>
+
+  <div class="top-row">
+    <div class="summary">
+      <strong>Report generated:</strong> 2025-11-11T09:10:37.047077<br>
+      <strong>Total sample transactions:</strong> 2<br>
+      <strong>Total weight (g):</strong> 32<br>
+      <strong>Total energy saved (kWh):</strong> 0.170<br>
+      <strong>Total carbon saved (kg CO₂e):</strong> 0.042
+    </div>
+    <div class="qr-box">
+      <img src="recycai_report_qr.png" alt="QR to full report" />
+      <div style="font-size:0.9em; color:#1b5e20;">
+        Scan to view<br>full digital report
+      </div>
+      <div style="font-size:0.75em; color:#33691e; margin-top:4px;">
+        Replace this QR with one<br>generated from your hosted URL.
+      </div>
+    </div>
+  </div>
+
+  <h2>Recycling Journeys (Samples)</h2>
+  
+    <div class="card">
+      <h3>Plastic Bottle (500ml) (PET)</h3>
+      <p><strong>Transaction:</strong> TXN20251111-0001<br>
+         <strong>Energy saved:</strong> 0.05 kWh &nbsp;
+         <strong>CO₂ saved:</strong> 0.012 kg<br>
+         <a href="https://recycai.example/tx/TXN20251111-0001">View detailed record</a></p>
+      <div class="images">
+        <div class="img-box">
+          <img src="plastic_before.png" alt="Original item" />
+          <p>Before recycling</p>
+        </div>
+        <div class="img-box">
+          <img src="plastic_after.png" alt="Recycled product" />
+          <p>After recycling</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h3>Aluminum Can (Aluminium)</h3>
+      <p><strong>Transaction:</strong> TXN20251111-0002<br>
+         <strong>Energy saved:</strong> 0.12 kWh &nbsp;
+         <strong>CO₂ saved:</strong> 0.03 kg<br>
+         <a href="https://recycai.example/tx/TXN20251111-0002">View detailed record</a></p>
+      <div class="images">
+        <div class="img-box">
+          <img src="aluminium_before.png" alt="Original item" />
+          <p>Before recycling</p>
+        </div>
+        <div class="img-box">
+          <img src="aluminium_after.png" alt="Recycled product" />
+          <p>After recycling</p>
+        </div>
+      </div>
+    </div>
+    
+
+  <h2>Recycling Processes (Illustrations)</h2>
+  <div class="process-grid">
+    <div class="process-card">
+      <img src="pet_process.png" alt="PET recycling process" />
+      <strong>PET bottles:</strong> collected, sorted and processed into new textiles / products.
+    </div>
+    <div class="process-card">
+      <img src="aluminium_process.png" alt="Aluminium recycling process" />
+      <strong>Aluminium cans:</strong> compacted, melted and rolled into new aluminium sheets or coils.
+    </div>
+  </div>
+
+  <p class="footer">Note: This page is a static sample for your poster. Host it online and regenerate the QR code to let users open the live version on their phones.</p>
+</body>
+</html>
